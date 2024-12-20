@@ -1,0 +1,229 @@
+body {
+    background-color: #e26eff; /* Replace with your desired color */
+    color: #000000; /* Ensure text is visible on the background */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #000000;
+    color: #e26eff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #e26eff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    background: #000000;
+    color: #e26eff;
+    padding: 1rem 0;
+}
+/* Style the container to use flexbox */
+.about-container {
+    display: flex;
+    align-items: center; /* Vertically align text and image */
+    justify-content: space-between; /* Add space between text and image */
+    gap: 20px; /* Add space between the text and the image */
+}
+
+/* Style the text */
+.about-text {
+    flex: 1; /* Allow the text to take up available space */
+    font-size: 20rem; /* Adjust font size */
+    line-height: 5; /* Improve readability */
+}
+
+/* Style the picture */
+.profile-pic {
+    width: 300px; /* Adjust the size */
+    height: 300px; /* Keep it proportional */
+    border-radius: 50%; /* Makes the picture circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align text */
+    }
+
+    .profile-pic {
+        margin-top: 20px; /* Add spacing on smaller screens */
+    }
+}
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000000; /* Blue color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #000000; /* Darker blue on hover */
+}
+.details-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.details-button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #0000;
+}
+@media (max-width: 768px) {
+    .project {
+        padding: 10px;
+    }
+
+    .project img {
+        width: 100%;
+    }
+}
+.details-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.details-link:hover {
+    background-color: #0056b3;
+}
+/* Styling the intro section */
+.intro-section {
+    display: flex; /* Create a horizontal layout */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Add space between text and image */
+    gap: 20px; /* Add spacing between the text and image */
+    margin: 20px 0;
+}
+
+/* Styling the text container */
+.intro-text {
+    flex: 1; /* Allow the text to take up available space */
+    max-width: 60%; /* Limit the width of the text */
+}
+
+/* Styling the image container */
+.intro-image img {
+    max-width: 100%; /* Ensure the image fits in its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit the height if needed */
+    border-radius: 10px; /* Optional: Round the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+/* LinkedIn Button Styling */
+.linkedin-button {
+    display: inline-block; /* Ensures the link behaves like a button */
+    padding: 10px 20px; /* Add padding for a button-like feel */
+    font-size: 16px; /* Set font size */
+    font-weight: bold; /* Make text bold */
+    color: #fff; /* White text color */
+    background-color: #0077b5; /* LinkedIn blue */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add hover effects */
+}
+
+/* Hover Effect */
+.linkedin-button:hover {
+    background-color: #005582; /* Darker shade of blue */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Responsive Adjustments */
+.linkedin-button:active {
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Skills Section */
+.skills-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0077b5; /* Optional: Add LinkedIn-style color for consistency */
+}
+
+/* Star Styles */
+.stars {
+    display: flex;
+    gap: 5px; /* Spacing between stars */
+}
+
+.star {
+    font-size: 20px;
+    color: #ddd; /* Default empty star color */
+}
+
+.star.full {
+    color: #ffc107; /* Full star color (gold) */
+}
+
+.star.half {
+    color: #ffc107; /* Same color as full stars for half stars */
+    background: linear-gradient(90deg, #ffc107 50%, #ddd 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
